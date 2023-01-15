@@ -7,11 +7,6 @@
 
 html {
   font-size: 10px;
-  height: 100%;
-}
-
-body {
-  height: 100%;
 }
 
 html, body, p, ul, li, ol, dl, dt, dd, fieldset {
@@ -76,22 +71,4 @@ fieldset {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.bread-crumbs {
-  display: flex;
-  gap: 10px;
-  padding: 30px;
-  position: sticky;
-  top: 0;
-  font-weight: 700;
-  font-size: 1.5rem;
-  width: 100%;
-  background-color: #fff;
-  opacity: 0.8;
-}
-
-.bread-crumbs-home:hover {
-  opacity: 50%;
-  cursor: pointer;
 }
