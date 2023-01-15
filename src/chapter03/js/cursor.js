@@ -29,13 +29,12 @@ window.onload = function(){
     })
 
     window.addEventListener("mousemove", function(e){
-        console.log(e.clientX)
         x = e.clientX;
         y = e.clientY;
         cursorItem.style.transform = "translate("+ x +"px, "+ y + "px )";
     });
     
-    // loop(); //마우스 움직임 부드럽게 하려면 loop 실행
+    loop(); //마우스 움직임 부드럽게 하려면 loop 실행
 }
 
 function loop(){
