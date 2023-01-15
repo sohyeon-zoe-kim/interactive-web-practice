@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>인프런 - interactive web 강의</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<script type="text/javascript">
+   window.onload = function() {
+    const component = document.getElementsByClassName('sohyeon-components-item')
+
+    Array.from(component).forEach(item => {
+      item.addEventListener('click', () => {
+        location.href = `./src/${item.innerText.split(' ')[1]}`
+      })
+    })
+  }
+</script>
+<style>
+  .sohyeon {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: #C85C8E;
+  }
+
+  .sohyeon-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 800;
+  }
+
+  .sohyeon-components-item {
+    margin: 20px;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .sohyeon-components-item:hover, .sohyeon-title:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="sohyeon">
+    <a href="https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C-%EC%9B%B9#" class="sohyeon-title">✨ 인프런 - 몇 줄로 끝내는 인터랙티브 웹 개발 노하우 [초급편] ✨</a>
+    <ul class="sohyeon-components-list">
+      <li class="sohyeon-components-item">1️⃣ chapter01</li>
+      <li class="sohyeon-components-item">2️⃣ chapter02-1</li>
+      <li class="sohyeon-components-item">3️⃣ chapter02-2</li>
+      <li class="sohyeon-components-item">4️⃣ chapter03</li>
+    </ul>
+  </div>
+</body>
+</html>

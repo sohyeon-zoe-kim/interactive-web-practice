@@ -1,0 +1,97 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard", "-apple-system", "BlinkMacSystemFont", system-ui, "Roboto", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+html, body, p, ul, li, ol, dl, dt, dd, fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type="checkbox"], label {
+  margin: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  resize: none;
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus {
+  outline: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.bread-crumbs {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.bread-crumbs-home:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
